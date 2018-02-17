@@ -1,0 +1,29 @@
+Sub Readthedata()
+
+Dim i As Long
+Dim Volume As Double
+Volume = 0
+Dim ticker As String
+Dim row As Integer
+row = 1
+Dim lastrow As Long
+
+lastrow = Cells(Rows.Count, 1).End(xlUp).row
+
+For i = 2 To lastrow
+If Cells(i + 1, 1).Value <> Cells(i, 1).Value Then
+ticker = Cells(i, 1).Value
+Volume = Volume + Cells(i, 7).Value
+Range("K" & row).Value = ticker
+Range("L" & row).Value = Volume
+row = row + 1
+Volume = 0
+
+Else
+Volume = Volume + Cells(i, 7).Value
+
+End If
+Next i
+
+End Sub
+
