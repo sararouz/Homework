@@ -1,0 +1,21 @@
+/* .col-sm-6 {
+    background-color: #f5f3f3;
+} */
+#main{
+  background-color: #f5f3f3;
+}
+
+#myNav {
+  background-color: #ffffff;
+}
+
+#col-lg {
+  background-color: #ffffff;
+}
+
+
+@media only screen and (max-width: 800px) {
+    #myNav {
+        background-color: lightgreen;
+    }
+}
