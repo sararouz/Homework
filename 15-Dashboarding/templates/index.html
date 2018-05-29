@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Belly Button Discovery</title>
+  <script src=""></script>
+  <link rel="stylesheet" href="../static/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
+   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+  <div class="container text-center">
+       <h1 class="jumbotron">Belly Button Biodiversity</h1>
+   </div>
+  <div class="row">
+    <div class="container col-md-6">
+      <h2>Data</h2>
+      <h3>Please Choose a Dataset</h3>
+        <select id="selDataset" onchange="optionChanged(this.value)">
+              </select>
+              <div class="panel panel-info">
+              <div class="panel-heading">Sample Meta Data</div>
+              <ul id=sampleList>
+              </ul>
+              <div class="panel-body"></div>
+            </div>
+      <!-- <button type="submit" onclick="names()">Search</button> -->
+    </div>
+    <div  class="col-md-8">
+      <div id="placeholder" >
+      </div>
+      </div>
+    </div>
+    <div class="row">
+    <div class="col-lg-12">
+      <h2>Pie Chart</h2>
+       <div id="pie"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <h2>Bubble Chart</h2>
+      <div id="bubble" >
+
+      </div>
+    </div>
+  </div>
+
+<script type="text/javascript" src="../static/plot.js"></script>
+</body>
+</html>
